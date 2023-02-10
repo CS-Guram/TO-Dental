@@ -9,6 +9,11 @@ return (
 	
 // Logo
 <div className="header">
+	    <div className="logo">
+          <NavLink to="/home" activeStyle>
+		    <h1>T|O DENTAL</h1>
+          </NavLink>	
+		  </div>
 
 	<div className="header-right">
 	   
@@ -34,7 +39,13 @@ return (
             Sign Up
       </NavLink>
 	</div>
-
+{/* Social Media Links */}
+<span className="instagram">
+<a href="https://www.instagram.com/todenta1/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram fa-lg"></i></a>
+</span>
+<span className="facebook">
+<a href="https://www.facebook.com/gkutaladze" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook fa-lg"></i></a>
+</span>
 <div/>
 </div>
 
