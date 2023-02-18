@@ -1,0 +1,36 @@
+.main-footer{
+    color: white;
+    background-color: #070b36;
+    padding-top: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.col{
+    text-align: center;
+    justify-content: end;
+    padding-top: 20px;
+     text-align: center;
+     flex: 1 0 30%;
+     flex-wrap: wrap;
+     padding-bottom: 20px;
+}
+
+.row {
+     column-count: 3;
+}
+
+.list-unstyled{
+    display: grid;
+    font-size:1vw
+}
+
+.col-sm{
+    text-align: center;
+    font-size:1.0vw ;
+    margin: 5px;
+    }
+
