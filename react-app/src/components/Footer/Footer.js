@@ -9,6 +9,7 @@ const Footer = () => {
                     {/*colimn1*/}
                     <div className="col">
                         <div className="list-unstyled">
+                        <i className="fa-solid fa-location-dot"></i><br/>
                             <i></i>LOCATION<i></i>
                             <i> 1629 west 10th street </i>
                             <i> Brooklyn, NY 11223 </i>
@@ -17,6 +18,7 @@ const Footer = () => {
                     {/*column2*/}
                     <div className="col">
                     <div className="list-unstyled">
+                    <i className="fa-solid fa-clock"></i><br/><hr/>
                             <h4> HOURS OF OPERATION </h4><br/>
                             <i> Daily by appointment 9:00 AM - 6:00 PM </i>
                             <i> Thursday 9:00 AM - 6:00 PM </i>
@@ -26,6 +28,7 @@ const Footer = () => {
                     {/*column3*/}
                     <div className="col">
                         <div className="list-unstyled">
+                        <i className="fa-solid fa-square-phone-flip"></i><br/>
                             <i>Contuct Us At</i>
                             <i>(347)-577-3338</i>
                         </div>

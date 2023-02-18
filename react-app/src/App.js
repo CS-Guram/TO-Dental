@@ -10,9 +10,12 @@ function App() {
 return (
   <Router>
 	  <Navbar />
-    <Footer />
-  </Router>
 
+    <div className = "page-container">
+    <div className = "content-wrap"></div>
+    <Footer />
+    </div>
+  </Router>
   
 );
 }
