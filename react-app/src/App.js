@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from './pages/home';
 import About from './pages/about';
+import Blogs from './pages/blogs';
+import NewPatients from './pages/newPatients';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -16,6 +18,8 @@ return (
 		  <Route exact path='/'  element={<Home />} />
 	    <Route path='/home'  element={<Home />} />
 		  <Route path='/about' element={<About/>} />
+      <Route path='/blogs' element={<Blogs/>} />
+      <Route path='/newPatients' element={<NewPatients/>} />
 	  </Routes>
 
     <div className = "page-container">

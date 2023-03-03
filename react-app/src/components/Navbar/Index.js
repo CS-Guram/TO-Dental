@@ -1,6 +1,6 @@
 /*source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header */
 import React from "react";
-import './Header.css';
+import './header.css';
 
 import { NavLink } from "./NavbarElements";
 
