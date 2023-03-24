@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-container{ 
+  flex-direction: column;
+  display:flex;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.content-wrap{
+  flex: 1;
+}

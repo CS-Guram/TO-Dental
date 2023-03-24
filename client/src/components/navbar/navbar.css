@@ -1,0 +1,16 @@
+.navbar {
+  background: linear-gradient(90deg, rgb(3, 1, 23) 0%, rgba(73,63,252,1) 100%)
+}
+.navbar-nav {
+font-weight: 500;
+}
+.nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+color: orange;
+}
+
+
