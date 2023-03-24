@@ -1,0 +1,64 @@
+.body1 h2 { text-align: center; }
+
+/* other styling */
+.body1 {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.822);
+  font-family: Avenir;
+  border: 3px solid rgba(176, 156, 156, 0.333);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+  margin-left: 200px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Noto Serif Toto', serif;
+}
+
+.body1 p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#my-link:visited {
+  color: rgb(73, 105, 212);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#my-link:hover {
+  color:  rgb(132, 132, 236);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#my-link:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.my-list {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.822);
+  font-family: Avenir;
+  border: 1px solid rgba(176, 156, 156, 0.333);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+  margin-left: 200px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  font-family: 'Noto Serif Toto', serif;
+}
+
+#my-list li {
+  font-size: 16px;
+  line-height: 1.5;
+}

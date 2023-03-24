@@ -1,0 +1,68 @@
+.equipmentTitle{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(222, 221, 221);  
+}
+
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column;
+  }
+}
+
+
+ .post h2 {
+    color: rgb(0, 0, 0);
+  }
+
+  .post p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: Arial;
+  }
+
+
+ol {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+/* Custom CSS to adjust the size of the embedded video */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 27%; 
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+

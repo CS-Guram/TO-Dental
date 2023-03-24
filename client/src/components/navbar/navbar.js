@@ -18,10 +18,10 @@ function Header () {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav ms-auto">
             <Nav.Link><Link className="nav-link" to="/">Home</Link></Nav.Link>
-            <Nav.Link><Link className="nav-link" to="/About">About</Link></Nav.Link>
-            <Nav.Link><Link className="nav-link" to="/Services">Services</Link></Nav.Link>
-            <Nav.Link><Link className="nav-link" to="/NewPatients">New Patients</Link></Nav.Link>
-            <Nav.Link><Link className="nav-link" to="/Login">Login</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link" to="/about">About</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link" to="/equipments">Equipment</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link" to="/newPatients">New Patients</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link" to="/login">Login</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
