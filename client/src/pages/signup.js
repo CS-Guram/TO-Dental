@@ -1,48 +1,93 @@
-import React from 'react';
+import React, { useState } from "react";
+import Axios from "axios";
+import './loginRegister.css';
 import { Link } from 'react-router-dom';
-import './signup.css'
 
-const SignUp = ({ isShowRegister}) => {
-  return (
-  	<div className={`${isShowRegister ? "active" : ""} show`}>
-		  <div className="register-form">
-			<div className="form-box solid">
-			  <form>
-				<h1 className="register-text">Registration</h1><br />
-
-        <br></br>
-				<label>Name</label>
-				<br></br>
-				<input type="text" name="name" className="register-box" />
-				<br></br>
-
-        <label>Username</label>
-				<br></br>
-				<input type="text" name="username" className="register-box" />
-				<br></br>
-
-        <label>Password</label>
-				<br></br>
-				<input type="password" name="password" className="register-box" />
-				<br></br>
-
-        <label>Email</label>
-				<br></br>
-				<input type="email" name="email" className="register-box" />
-				<br></br>
-
-				<input type="submit" value="Register" className="register-btn" />
-				<p>Do you have an account?</p> 
-				<Link to="/login" activeStyle>
-          		  login
-                </Link>
-
-
-			  </form>
-			</div>
-		  </div>
-		</div>
-  );
-};
+function SignUp() {
+	const [email, setEmail] = useState("");
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+	const [registerStatus, setRegisterStatus] = useState("");
   
+	const register = (e) => {
+	  e.preventDefault();
+	  Axios.post("http://localhost:3001/register", {
+		email: email,
+		username: username,
+		password: password,
+	  }).then((response) => {
+		if (response.data.message) {
+		  setRegisterStatus(response.data.message);
+		} else {
+		  setRegisterStatus("ACCOUNT CREATED SUCCESSFULLY");
+		}
+	  });
+	};
+  
+	return (
+	<div className="box">
+	  <div className="loginForm">
+		<form>
+		  <h4>Create account</h4>
+		  <label htmlFor="email">Email Address*</label>
+		  <input
+			className="textInput"
+			type="text"
+			name="email"
+			onChange={(e) => {
+			  setEmail(e.target.value);
+			}}
+			placeholder="Enter your Email Address"
+			required
+		  />
+		  <label htmlFor="username">Username*</label>
+		  <input
+			className="textInput"
+			type="username"
+			name="username"
+			onChange={(e) => {
+			  setUsername(e.target.value);
+			}}
+			placeholder="Enter your Username"
+			required
+		  />
+		  <label htmlFor="password">Password*</label>
+		  <input
+			className="textInput"
+			type="password"
+			name="password"
+			onChange={(e) => {
+			  setPassword(e.target.value);
+			}}
+			placeholder="Enter your Password"
+			required
+		  />
+		  <input
+			className="button"
+			type="submit"
+			onClick={register}
+			value="Create an account"
+		  />
+		<p>Already have an account? </p>
+		<div id="signup">
+		    <Link to="/login" activestyle="true">
+          		Click here to Sign in
+            </Link>
+		</div>
+		  <h1
+			style={{
+			  fontSize: "15px",
+			  textAlign: "center",
+			  marginTop: "20px",
+			}}
+		  >
+			{registerStatus}
+		  </h1>
+		</form>
+	  </div>
+	  </div>
+	);
+  }
 export default SignUp;
+
+

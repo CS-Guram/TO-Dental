@@ -22,6 +22,7 @@ function Header () {
             <Nav.Link><Link className="nav-link" to="/equipments">Equipment</Link></Nav.Link>
             <Nav.Link><Link className="nav-link" to="/newPatients">New Patients</Link></Nav.Link>
             <Nav.Link><Link className="nav-link" to="/login">Login</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link" to="/dashboard">Dashboard</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

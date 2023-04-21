@@ -8,6 +8,7 @@ import Equipments from './pages/equipments';
 import NewPatients from './pages/newPatients';
 import Login from './pages/login';
 import SignUp from './pages/signup';
+import Dashboard from './pages/dashboard';
 import Footer from './components/footer/footer';
 
 import { BrowserRouter as Router, Routes, Route}from 'react-router-dom';
@@ -26,6 +27,7 @@ function App() {
 	<Route path='/newPatients' element={<NewPatients/>} />
 	<Route path='/sign-up' element={<SignUp/>} />
 	<Route path='/login' element={<Login/>} />
+	<Route path='/dashboard' element={<Dashboard/>} />
 	</Routes>
 	<Footer/>
   </Router>
