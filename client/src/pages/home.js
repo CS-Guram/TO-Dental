@@ -22,7 +22,7 @@ function Home () {
         e.preventDefault();
   
    
-    const res = await fetch("/register",{
+    const res = await fetch("/appointment",{
         method:"POST",
         headers:{
           "Content-Type": "application/json"
