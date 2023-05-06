@@ -20,22 +20,25 @@ router.post('/register', (req, res) => {
 });
 
 router.post("/login", (req, res) => {
+    const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
-    con.query("SELECT * FROM users WHERE username = ? AND password = ?", [username, password], 
+    con.query("SELECT * FROM users WHERE email = ? AND username = ? AND password = ?", [email, username, password], 
         (err, result) => {
             if(err){
-                req.setEncoding({err: err});
+              res.status(500).send({err: err});
             }else{
                 if(result.length > 0){
-                    res.send(result);
+                    const email = result[0].email; // get the email from the result
+                    res.send({ email }); // send back the email in the response
                 }else{
                     res.send({message: "WRONG USERNAME OR PASSWORD!"})
                 }
             }
         }
     )
-});
+})
+
 
 router.post("/appointment",(req,res)=>{
     const data = {fname, lname, email, message} = req.body;
@@ -78,11 +81,12 @@ router.post("/appointment",(req,res)=>{
     //console.log(req.body);
 });
 
-router.get('/dashboard/:idpatients', (req, res) => {
-    const idpatients = req.params.idpatients;
+
+router.get('/dashboard/:userEmail', (req, res) => {
+    const userEmail = req.params.userEmail;
     con.query(
-      'SELECT email, username, procedures, date, time FROM users WHERE idpatients = ?',
-      [idpatients],
+      'SELECT email, username, procedures, date, time FROM users WHERE email = ?',
+      [userEmail],
       (err, result) => {
         if (err) {
           console.log(err);

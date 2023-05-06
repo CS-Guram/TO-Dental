@@ -6,6 +6,7 @@ import { useNavigate , Link } from 'react-router-dom';
 function Login() {
   const navigate = useNavigate();
 
+  const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState("");
@@ -13,7 +14,8 @@ function Login() {
 
   const login = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:4001/login", {
+    Axios.post("http://localhost:3001/login", {
+      email: email,
       username: username,
       password: password,
     }).then((response) => {
@@ -22,7 +24,13 @@ function Login() {
         setLoginStatus(response.data.message);
       } else {
         console.log("Navigating to user dashboard...");
-        console.log(navigate)
+        const email = response.data.email;
+        localStorage.setItem("userEmail", email); // store user email in localStorage
+        if (localStorage.getItem("userEmail") !== null) {
+          console.log("Email is stored in localStorage");
+        } else {
+          console.log("Email is not stored in localStorage");
+        }
         navigate('/dashboard'); // navigate to the dashboard
       }
     });
@@ -34,10 +42,21 @@ function Login() {
       <div className="loginForm">
         <form>
           <h4>Sign in</h4>
+          <label htmlFor="email">Email*</label>
+          <input
+            className="textInput"
+            type="email"
+            name="email"
+            onChange={(e) => {
+              setEmail(e.target.value)
+            }}
+            placeholder="Enter your Email"
+            required
+          />
           <label htmlFor="username">Username*</label>
           <input
             className="textInput"
-            type="text"
+            type="username"
             name="username"
             onChange={(e) => {
               setUsername(e.target.value)
