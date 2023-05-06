@@ -1,32 +1,80 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from 'react-bootstrap';
-import "./navbar.css"
+import React from "react";
+import "./navbar.css";
 
-function Header () {
+function Header() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand className="navbar-brand" href="#">
-          <NavLink className="nav-link" href="/">
-            <span className="text-warning p-2">T|O</span>Dental</NavLink>
-        </Navbar.Brand>
-        <NavLink className="instagram nav-link p-3" href="https://www.instagram.com/todenta1/" target="_blank"><i className="bi bi-instagram"></i></NavLink>
-        <NavLink className="facebook nav-link" href="https://www.facebook.com/gkutaladze" target="_blank"><i className="bi bi-facebook"></i></NavLink>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="nav ms-auto">
-            <NavLink className="nav-link" href="/">Home</NavLink>
-            <NavLink className="nav-link" href="/about">About</NavLink>
-            <NavLink className="nav-link" href="/equipments">Equipment</NavLink>
-            <NavLink className="nav-link" href="/newPatients">New Patients</NavLink>
-            <NavLink  className="nav-link" href="/login">Login</NavLink>
-            <NavLink  className="nav-link" href="/dashboard">Dashboard</NavLink>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    //fully collapsable navbar using bootstrap CSS
+    //external links to facebook and instagram
+    //return to home page by clicking the brand name or home button
+    //navigation links to various pages of the brand
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <a className="navbar-brand text-warning p-2" href="/">
+          T|O Dental
+        </a>
+        <a
+          className="facebook p-3 nav-link"
+          href="https://www.facebook.com/gkutaladze"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="bi bi-facebook"></i>
+        </a>
+        <a
+          className="instagram nav-link"
+          href="https://www.instagram.com/todenta1/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="bi bi-instagram"></i>
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto p-2">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/about">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/equipments">
+                Equipment
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/newPatients">
+                New Patient
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/login">
+                Login
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/dashboard">
+                Dashboard
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
