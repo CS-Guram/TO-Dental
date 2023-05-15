@@ -1,17 +1,23 @@
+// importing the React library for creating React components
 import React from "react";
+
+// importing a CSS file for styling the navbar
 import "./navbar.css";
 
+// defining the Header component that returns the navbar JSX
 function Header() {
   return (
-    //fully collapsable navbar using bootstrap CSS
-    //external links to facebook and instagram
-    //return to home page by clicking the brand name or home button
-    //navigation links to various pages of the brand
+   
+  // creating a Bootstrap navbar component with a background color
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
+
+      {/* adding a branding logo with a hyperlink to the home page */}
         <a className="navbar-brand text-warning p-2" href="/">
           T|O Dental
         </a>
+
+        {/* adding a Facebook link with a Facebook icon */}
         <a
           className="facebook p-3 nav-link"
           href="https://www.facebook.com/gkutaladze"
@@ -20,6 +26,8 @@ function Header() {
         >
           <i className="bi bi-facebook"></i>
         </a>
+
+        {/* adding an Instagram link with an Instagram icon */}
         <a
           className="instagram nav-link"
           href="https://www.instagram.com/todenta1/"
@@ -28,6 +36,8 @@ function Header() {
         >
           <i className="bi bi-instagram"></i>
         </a>
+
+        {/* adding a collapsible hamburger menu for mobile devices */}
         <button
           className="navbar-toggler"
           type="button"
@@ -39,6 +49,8 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
+        {/* adding a list of links to different pages on the website */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto p-2">
             <li className="nav-item">
@@ -66,11 +78,6 @@ function Header() {
                 Login
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/dashboard">
-                Dashboard
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -78,4 +85,5 @@ function Header() {
   );
 }
 
+// exporting the Header component as a default export to use in other parts of the code
 export default Header;

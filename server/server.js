@@ -6,7 +6,7 @@ const cors = require("cors")
 const mysql2 = require("mysql2");
 require("./database");
 
-const port = 4001;
+const port = 3001;
 
 app.use(express.json());
 app.use(cors());

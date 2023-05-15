@@ -1,0 +1,185 @@
+/* Styling for the .box class */
+.box{
+  /* set the top margin to 25px */
+  margin-top:236px;
+  margin-bottom: 236px;
+  /* center the content horizontally */
+  justify-content: center;
+}
+
+/* Set the margin for the .loginForm class */
+.box .loginForm{
+  /* sets a margin of 5% */
+  margin: 5%;
+}
+
+/* Styling for the .loginForm class */
+.box .loginForm form{
+  /* set the background color */
+  background-color: rgb(240, 236, 230);
+  /* set the flex direction to column */
+  flex-direction: column;
+  /* set the width of the login form to 350px */
+  width: 450px;
+  /* set padding on the left and right sides of the login form to 20px and no padding on the top and bottom */
+  padding: 0 20px;
+  /* set the border color to black */
+  border-color: black;
+  /* set the border to 12px solid with a color of rgb(39, 33, 141) */
+  border: 6px solid rgb(39, 33, 141);
+  /* set the border radius to 35px */
+  border-radius: 35px;
+  /* set the margin to 50px on the top and bottom and auto on the left and right */
+  margin: 50px auto;
+}
+
+/* Styling for the h4 element within the form element */
+.box .loginForm form h4{
+  /* sets the font size to 40 pixels */
+  font-size: 40px;
+  /* centers the text */
+  text-align: center;
+  /* adds a margin of 30 pixels to the bottom */
+  margin-bottom: 30px;
+  /* adds a margin of 10 pixels to the top */
+  margin-top: 10px;
+}
+
+/* Styling for the label elements within the form element */
+.box .loginForm form label{
+  /* add a margin below  */
+  margin-bottom: 2px;
+}
+
+
+/* Styling for the input elements with a class of .textInput within the form element */
+.box .loginForm form .textInput{
+  /* set the width to 100% to fill the parent container */
+  width: 100%;
+  /* set the height */
+  height: 40px;
+  /* add a margin below */
+  margin-bottom: 15px;
+  /* remove the default outline style */
+  outline: none;
+  /* set the padding */
+  padding: 10px;
+  /* add rounded corners */
+  border-radius: 7px;
+}
+
+/* Styling for the button elements with a class of .button within the form element */
+.box .loginForm form .button{
+  /* set width to auto so button size adjusts based on text */
+  width: auto;
+  /* add margin to top of button */
+  margin-top: 15px;
+  /* set padding for button text */
+  padding: 8px 30px;
+  /* senter text within button */
+  text-align: center;
+  /* senter button within parent container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* set cursor type to pointer on hover */
+  cursor: pointer;
+  /* add a 1px black solid border to button */
+  border: 1px solid black;
+  /* remove outline */
+  outline: none;
+  /* set button border radius */
+  border-radius: 20px;
+  /* automatically center button horizontally within parent container */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Styling for the button elements with a class of .button when hovered over */
+.box .loginForm form .button:hover{
+  /* sets the background color */
+  background-color: #007bff;;
+  /* sets the color of the text */
+  color: #f9f9fa;
+  /* sets the font weight of the text to bold */
+  font-weight: bold;
+}
+
+/* Styling for the p elements within the form element  */
+.box .loginForm form p{
+  /* sets the color of the text */
+  color: rgb(0, 0, 0);
+  /* sets the padding at the top of the element */
+  padding-top: 0px;
+  /* sets the margin at the bottom */
+  margin-bottom: 0;
+  /* sets the margin at the top */
+  margin-top: 20px;
+  /* sets the text alignment inside the element to center */
+  text-align: center;
+}
+
+/* Styling for the a elements within the form element */
+.box .loginForm form a {
+  /* sets the overflow property of the element to hidden, 
+  any content that exceeds the boundaries of the element will be hidden */
+  overflow: hidden;
+
+  /* sets the display property of the element to block, the element will 
+  take up the full width of its container */
+  display: block;
+  /* sets the text alignment inside the element to center */
+  text-align: center;
+  /* sets the color of the text inside the element */
+  color: #007bff;
+  /* sets the text decoration of the element to none*/
+  text-decoration: none;
+  /* sets the font weight of the text inside the element to bold */
+  font-weight: bold;
+  /* sets the margin at the top of the element */
+  margin-top: 15px;
+}
+
+/* Styling for the a elements within the form element when hovered over */
+.box .loginForm form a:hover {
+  /* sets the text decoration of the element to underline, the text will have a line below it */
+  text-decoration: underline;
+  /* sets the color of the text inside the element */
+  color: #054080f8;
+}
+
+/* Styling for the .image-container class */
+.image-container {
+  /* sets the position of the element to relative, the position of the image
+  will be relative to its normal position in the document flow */
+  position: relative;
+}
+
+/* Styling for the .background-image class  */
+.background-image {
+  /* sets the background image to not repeat, so it covers the entire area 
+  of the element */
+  background-repeat: no-repeat;
+  /* sets the size of the background image to cover the entire area of the element */
+  background-size: cover;
+  /* sets the width of the element */
+  width: 100%;
+  /* sets the height of the element */
+  height: 400px;
+}
+
+/* Styling for the .text-container class  */
+.text-container {
+  /* sets the position of the element to absolute, its position will be relative to 
+  the nearest positioned ancestor (if any), or the initial containing block otherwise */
+  position: absolute;
+  /* sets the top and left positions of the element to 0, it will be positioned at the top 
+  left corner of its nearest positioned ancestor (if any), or the initial containing block otherwise */
+  top: 0;
+  left: 0;
+  /* sets the padding of the element */
+  padding: 20px;
+  /* sets the color of the text inside */
+  color: #fff;
+}
