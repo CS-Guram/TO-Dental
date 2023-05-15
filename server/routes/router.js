@@ -1,13 +1,20 @@
+/**
+ * Dental website API endpoints and database queries
+ */
+
+// Import necessary modules and files
 const express = require("express");
 const router = new express.Router();
 const nodemailer = require("nodemailer");
 const con = require("../database");
 
+// Route for registering a new user
 router.post('/register', (req, res) => {
     const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
 
+    // Query the database to insert the user's details
     con.query("INSERT INTO users (email, username, password) VALUES (?, ?, ?)", [email, username, password], 
         (err, result) => {
             if(result){
@@ -19,10 +26,13 @@ router.post('/register', (req, res) => {
     )
 });
 
+// Route for logging in a user
 router.post("/login", (req, res) => {
     const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
+
+    // Query the database to check if the user exists and if the password. email and username is correct
     con.query("SELECT * FROM users WHERE email = ? AND username = ? AND password = ?", [email, username, password], 
         (err, result) => {
             if(err){
@@ -39,7 +49,7 @@ router.post("/login", (req, res) => {
     )
 })
 
-
+// Route for sending an email to the dental clinic for an appointment
 router.post("/appointment",(req,res)=>{
     const data = {fname, lname, email, message} = req.body;
 
@@ -75,15 +85,17 @@ router.post("/appointment",(req,res)=>{
         res.status(201).json({status:401,error})
 
     }
-
     //For testing purposes
     //
     //console.log(req.body);
 });
 
 
+// Route for getting the dashboard details of a user
 router.get('/dashboard/:userEmail', (req, res) => {
     const userEmail = req.params.userEmail;
+
+    // Query the database to get the details of the user with the given email
     con.query(
       'SELECT email, username, procedures, date, time FROM users WHERE email = ?',
       [userEmail],

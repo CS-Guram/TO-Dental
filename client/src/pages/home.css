@@ -22,10 +22,8 @@ h4 {
 
 /* Styling for the modal */
 .modal {
-    /* set the width to 600px */
-    width: 600px;
-    /* set the left margin to 445px*/
-    margin-left: 445px;
+    margin: 0;
+    margin-top: 2%;
 }
 
 /* Styling for the modal-content */

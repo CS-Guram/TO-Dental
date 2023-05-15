@@ -87,9 +87,9 @@ function Dashboard() {
 
         {/* bootstrap container element for fluid layout and padding */}
         <div className="container-fluid p-5 bg-white text-black text-center">
-          <p>
+         
             <h4>Payment Options</h4>
-          </p>
+
           <hr /> <br />
           <br />
           <p>

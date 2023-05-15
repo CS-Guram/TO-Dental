@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 // importing CSS file for styling the login page
-import "./login.css";
+import "./loginSignup.css";
 
 // importing Axios library for making HTTP requests
 import Axios from "axios";

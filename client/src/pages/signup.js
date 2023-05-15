@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Axios from "axios";
 
 // importing CSS file for styling the login page
-import './login.css';
+import './loginSignup.css';
 
 // importing the Link component from the react-router-dom library
 import { Link } from 'react-router-dom';

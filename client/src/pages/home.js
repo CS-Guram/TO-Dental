@@ -19,6 +19,7 @@ function Home() {
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
 
   // define the sendEmail function to be called when the form is submitted
   const sendEmail = async (e) => {
@@ -49,6 +50,7 @@ function Home() {
     } else {
       // otherwise, log a success message to the console and reset the state variables to empty strings
       console.log("Email Sent");
+      setShowMessage(true);
       setFname("");
       setLname("");
       setEmail("");
@@ -184,11 +186,10 @@ function Home() {
                       />
                     </div>
                     {/* Send button which calls the sendEmail function when clicked */}
+                    {showMessage && <p>The message has been sent successfully!</p>}
                     <button
                       type="button"
                       className="btn btn-warning m-2"
-                      // closes the current modal when the button is clicked
-                      data-bs-dismiss="modal"
                       aria-label="Close"
                       // sendEmail function sends a POST request to the server with the form data,
                       // and logs either an "Email Sent" message or an "error" message depending
