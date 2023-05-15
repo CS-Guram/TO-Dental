@@ -1,0 +1,46 @@
+/* Styling for the carousel-caption for h5 elements*/
+.carousel-caption > h5 {
+    /* Set font size for h5 elements inside elements with class "carousel-caption" when screen width is above 767px */
+    font-size: 35px;
+}
+
+/* media query that applies styles to the page when the screen width is 767px or less */
+/* Styling for class carousel-caption for h5 elements */
+@media only screen and (max-width: 767px){
+    .carousel-caption h5 {
+        /* set font size for h5 elements inside elements with class "carousel-caption" when screen width is 767px or less */
+        font-size: 17px;
+    }
+    
+}
+
+/* Styling for all h4 elements */
+h4 {
+    /* set padding for all h4 elements */
+    padding: 15px;
+}
+
+/* Styling for the modal */
+.modal {
+    margin: 0;
+    margin-top: 2%;
+}
+
+/* Styling for the modal-content */
+.modal-content {
+    /* set the background color */
+    background-color: rgb(240, 236, 230);
+    /* set the border to 6px solid with a color of rgb(39, 33, 141) */
+    border: 6px solid rgb(39, 33, 141);
+    /* set the border radius to 30px */
+    border-radius: 30px;
+}
+
+/* Styling for the modal-body */
+.modal-body form{
+    /* set the background color */
+    background-color: rgb(240, 236, 230);
+    /* set the border radius to 30px */
+    border-radius: 30px;
+}
+  

@@ -1,0 +1,9 @@
+/* sets the background color of the footer using a linear gradient */
+/* the gradient starts with the color rgb(3, 1, 23) at 0% and ends with rgba(73,63,252,1) at 100% */
+/* the text color is set to white */
+/* the page-footer class is used to apply the styling */
+.page-footer {
+    background: linear-gradient(90deg, rgb(3, 1, 23) 0%, rgba(73,63,252,1) 100%);
+    color:white; 
+}
+

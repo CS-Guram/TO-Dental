@@ -1,0 +1,24 @@
+/* sets the background color of the navbar using a linear gradient */
+/* the gradient starts with the color rgb(3, 1, 23) at 0% and ends with rgba(73,63,252,1) at 100% */
+/* the navbar class is used to apply the styling */
+.navbar {
+  background: linear-gradient(90deg, rgb(3, 1, 23) 0%, rgba(73,63,252,1) 100%)
+}
+
+/* sets the font size for the brand */
+.navbar-brand {
+  font-size: 26px;
+}
+
+/* sets the color and font size of the links inside the navbar */
+/* the nav-link class is used to apply the styling */
+.nav-link {
+  color: white;
+  font-size: 21px;
+}
+
+/* changes the color of the link on hover to orange */
+/* the nav-link class is used to apply the styling */
+.nav-link:hover {
+color: orange;
+}
