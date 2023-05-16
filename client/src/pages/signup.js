@@ -26,7 +26,7 @@ function SignUp() {
 	  e.preventDefault();
 
 	  // sending a post request to the backend with the form data
-	  Axios.post("http://localhost:4001/register", {
+	  Axios.post("http://localhost:3001/register", {
 		email: email,
 		username: username,
 		password: password,
