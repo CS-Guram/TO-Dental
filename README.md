@@ -5,7 +5,7 @@ T|O dental is a fully scalable and functional web application designed for a den
 
 Key Features:
 
-Patient Information: The web app allows patients to access and update their personal information, including past dental procedures, through a secure login portal.
+**Patient Information:** The web app allows patients to access and update their personal information, including past dental procedures, through a secure login portal.
 
 Appointment Management: Patients can conveniently schedule and manage appointments, reducing the need for office calls and improving clinic productivity.
 
