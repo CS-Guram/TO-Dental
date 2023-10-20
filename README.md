@@ -7,7 +7,7 @@ Key Features:
 
 **Patient Information:** The web app allows patients to access and update their personal information, including past dental procedures, through a secure login portal.
 
-Appointment Management: Patients can conveniently schedule and manage appointments, reducing the need for office calls and improving clinic productivity.
+__Appointment Management:__ Patients can conveniently schedule and manage appointments, reducing the need for office calls and improving clinic productivity.
 
 Efficient Database: T|O dental utilizes a robust backend powered by Node.js, Express.js, and MySQL Workbench to efficiently store and retrieve patient information while maintaining security and confidentiality.
 
