@@ -18,3 +18,4 @@ T|O dental is a fully scalable and functional web application designed for a den
 - **Downloadable Forms**: To save time during clinic visits, patients can download and fill out required forms in advance, streamlining administrative procedures.
 
 - **Clinic Information**: An "About" page provides insights into the clinic's doctors, and an "Equipment" page showcases the dental technologies used, enhancing transparency and patient trust.
+![Screenshot 2023-10-20 121022](https://github.com/CS-Guram/TO-Dental/assets/61927289/e876a113-7be7-410e-8dcb-7ba52fb97ed6)
