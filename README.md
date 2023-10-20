@@ -63,3 +63,7 @@ This section outlines the software construction process of the web application.
 Below is a diagram that illustrates how the source code and the coding process have been organized:
 
 ![Screenshot 2023-10-20 132052](https://github.com/CS-Guram/TO-Dental/assets/61927289/76bb1288-2709-425c-add3-e9dc44821364)
+
+
+https://github.com/CS-Guram/TO-Dental/assets/61927289/a1be8b22-b3a6-45f2-b9b7-cdddb76a9f45
+
