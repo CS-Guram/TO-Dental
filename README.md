@@ -1,7 +1,7 @@
 # TO-Dental
 
 **Web App Description:**
-T|O dental is a fully scalable and functional web application designed for a dental clinic. This web app offers a seamless and user-friendly experience for both patients and clinic administrators. It leverages modern web technologies, including React.js, Bootstrap CSS, CSS, and HTML, to create an elegant and responsive user interface.
+T|O dental is a fully scalable and functional web application designed for a dental clinic. This web app offers a seamless and user-friendly experience for both patients and clinic administrators. It leverages modern web technologies, including React.js, Bootstrap, CSS, and HTML, to create an elegant and responsive user interface.
 
 ## Key Features
 
